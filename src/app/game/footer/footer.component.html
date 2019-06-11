@@ -1,0 +1,6 @@
+<p>
+  Number of movements: {{(stateService.state$ | async).movements}}
+</p>
+<button [class.disabled]="stateService.state.movements === 0"
+  [disabled]="stateService.state.movements === 0"
+  (click)="_handlerResetClick()">Reset</button>

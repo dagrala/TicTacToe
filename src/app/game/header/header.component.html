@@ -1,0 +1,2 @@
+<p *ngIf="!stateService.state.winner">Turn of {{(stateService.state$ | async).turn == 'PLAYERX' ? "Player 1 - Xs" : "Player 2 - 0s"}}</p>
+<p *ngIf="stateService.state.winner">There is a winner, {{(stateService.state$ | async).turn == 'PLAYERX' ? "Player 1 - Xs" : "Player 2 - 0s"}}</p>
